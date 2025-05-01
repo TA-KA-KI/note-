@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>note量産くん</title>
+</head>
+<body>
+  <h1>note量産くん（PWA対応）</h1>
+
+  <label><input type="radio" name="mode" value="構成" checked> 構成だけ</label>
+  <label><input type="radio" name="mode" value="本文"> 本文まで</label>
+
+  <textarea id="input" placeholder="キーワードを入力"></textarea>
+  <button onclick="generate()">作成する</button>
+
+  <div id="output"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
